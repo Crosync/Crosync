@@ -1,0 +1,5 @@
+<%=
+	render :active_scaffold => 'oplogs',
+		:label => "Family's Epoch Tables",
+		:conditions => "(column_replica = '#{params[:id]}' OR row_replica = '#{params[:id]}')"
+%>
